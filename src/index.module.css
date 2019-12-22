@@ -1,0 +1,10 @@
+
+input.input::-webkit-input-placeholder{
+    color: rgb(188, 197, 64);
+}
+input.input{
+    color:#bbb;
+    caret-color: orangered;
+    outline-style: none;
+    border: 0;
+}
