@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Lesson2(props) {
-    return (
-        <div>
-            {props.stage}: {props.title}
-        </div>
-    )
-}
+// function Lesson2(props) {
+//     return (
+//         <div>
+//             {props.stage}: {props.title}
+//         </div>
+//     )
+// }
 const lessons = [
     {stage: "React", title: "核心API"},
     {stage: "React", title: "Redux"},
@@ -30,17 +30,6 @@ const withLog = Comp => {
     }
 }
 
-{/* @withLog
-@withContent
-class Lesson extends React.Component {
-    render() {
-        return (
-            <div>
-                {this.props.stage}: {this.props.title}
-            </div>
-        )
-    }
-} */}
 
 @withLog
 @withContent

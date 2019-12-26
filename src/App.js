@@ -6,6 +6,8 @@ import Vmodule from './components/Vmodule'
 import HocTest from './components/HocTest.tsx'
 import Composition from './components/Composition'
 import HooksTest from './components/HooksTest'
+import AntdFormTest from './components/AntdFormTest'
+import LFormTest from './components/LFormTest';
 
 function App(props) {
   return (
@@ -19,6 +21,8 @@ function App(props) {
           <HocTest/>
           <Composition/>
           <HooksTest/>
+          <AntdFormTest/>
+          <LFormTest/>
       </div>
     </div>
   );

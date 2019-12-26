@@ -1,5 +1,7 @@
 /* 组件符合 */
 import React from 'react'
+import Button from 'antd/lib/button';
+import 'antd/dist/antd.css'
 
 // 定义组件外观和行为
 function Dialog(props){
@@ -13,7 +15,7 @@ function Dialog(props){
     // 执行函数获得要显示的内容
     const {def, footer} = props.children(messages[props.msg])
     return (
-        <div style={{border: "1px solid orange"}}>
+        <div style={{border: "1px solid orange",textAlign:"center",width:'300px'}}>
             {def}
             <div>{footer}</div>
         </div>
@@ -54,7 +56,7 @@ export default function Composition() {
                         <p>{content}</p>
                     </>
                 ),
-                footer: <button onClick={() => window.confirm('确定要提交吗？')}>确定</button>
+                footer: <Button type="primary" onClick={() => window.confirm('确定要提交吗？')}>确定</Button>
             })}
             </Dialog>
             <RadioGroup name="mvvm">

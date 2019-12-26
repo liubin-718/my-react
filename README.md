@@ -1,10 +1,19 @@
-HooksTest.js
+1、HooksTest.js
 useEffect 中写有副作用的代码：比如dom操作、setTimeout、ajax
     它的依赖更改，它内部代码才会再次执行，如果将它里面的代码放到外面
     当setState时，会从新渲染，那岂不是副作用代码会再次执行
 
+2、安装react-app-rewired取代react-scripts 可以扩展webpack的配置
+npm install react-app-rewired customize-cra babel-plugin-import -D
+并且在根目录下创建config-overrides.js
+并且修改package.json中运行的命令("start": "node scripts/start.js",) eg："start":"react-app-rewired start"
+备注：运行npm run start后会报错，再执行 npm install react-scripts -S，再启动npm run start就好了
 
+3、支持装饰器配置：
+npm i -D @babel/plugin-proposal-decorators
 
+4、实现自己的表单组件（LFormTest.js）
+在tsconfig.json 中设置"experimentalDecorators": true, // 解除对装饰器的警报
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
