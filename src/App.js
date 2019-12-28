@@ -8,6 +8,7 @@ import Composition from './components/Composition'
 import HooksTest from './components/HooksTest'
 import AntdFormTest from './components/AntdFormTest'
 import LFormTest from './components/LFormTest';
+import Dialog2, {Dialog} from './components/Dialog';
 
 function App(props) {
   return (
@@ -23,6 +24,8 @@ function App(props) {
           <HooksTest/>
           <AntdFormTest/>
           <LFormTest/>
+          <Dialog>弹框组件</Dialog>
+          <Dialog2>弹框组件2</Dialog2>
       </div>
     </div>
   );

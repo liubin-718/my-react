@@ -14,6 +14,14 @@ npm i -D @babel/plugin-proposal-decorators
 
 4、实现自己的表单组件（LFormTest.js）
 在tsconfig.json 中设置"experimentalDecorators": true, // 解除对装饰器的警报
+5、弹窗类组件设计
+设计思路： 弹窗类组件的要求弹窗内容在A处声明，却在B处展示
+具体实现:
+    方案1：Portal
+    传送门，react v16之后出现的portal可以实现内容传送功能。
+    方案2：unstable_renderSubtreeIntoContainer
+    在v16之前，要用到react中两个秘而不宣的React API: unstable_renderSubtreeIntoContainer,unmountComponentAtNode
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
