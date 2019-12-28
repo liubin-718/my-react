@@ -50,7 +50,12 @@ class Clock extends Component {
 export default function StateMsg() {
     return (
         <div>
-            <Clock change={date => console.log(date.toLocaleTimeString())}/>
+            <Clock change={
+                date => {
+                        // console.log(date.toLocaleTimeString())
+                    }
+                }
+            />
         </div>
     )
 }
