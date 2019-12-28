@@ -48,7 +48,7 @@ export default class Dialog2 extends Component {
             this.node
         )
     }
-    清除div
+    // 清除div
     componentWillUnmount() {
         document.body.removeChild(this.node)
     }
